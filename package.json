@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js -e ejs,js,css,html,jpg,png,scss"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "express": "^4.17.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "livereload": "^0.9.1"
   }
 }

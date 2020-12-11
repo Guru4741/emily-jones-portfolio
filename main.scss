@@ -1,3 +1,8 @@
+$theme-colors: (
+  "primary": #521521,
+  "danger": #bd0e04
+);
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 .main-form{
