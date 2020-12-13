@@ -1,3 +1,7 @@
+a:hover {
+    text-decoration: none;
+}
+
 .hero {
     background: url(https://bootstrapmade.com/demo/templates/Bethany/assets/img/hero-bg.jpg) center center;
     background-attachment: fixed;
@@ -176,6 +180,89 @@
     background: #009970;
     border: 2px solid #009970;
     text-decoration: none;
+}
+
+.services {
+    outline: 2pt solid red;
+    background: #f6f6f7;
+    padding: 60px 0;
+}
+
+.services-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.services-title h2::after {
+    content: '';
+    background: #009970;
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+
+.services .icon-box {
+    text-align: center;
+    background: #ffffff;
+    transition: all ease-in-out 0.3s;
+    padding: 40px 20px;
+}
+
+.services .icon-box:hover {
+    border-color: #ffffff;
+    box-shadow: 0px 0 25px 0 rgba(0,0,0,0.1);
+}
+
+.services .icon {
+    border: 1pt solid #009970;
+    color: #009970;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box:hover .icon {
+    color: #ffffff;
+    background: #009970;
+
+}
+
+.services .icon i {
+    font-size: 28px;
+}
+
+.services h4 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.services h4 a {
+    color: #36343a;
+    transition: ease-in-out 0.3s;
+}
+
+.services .icon-box:hover h4 a {
+    color: #009970;
+}
+
+.services p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px){
