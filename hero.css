@@ -142,8 +142,41 @@
     left: 0;
 }
 
+.cta {
+    padding: 60px 0;
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("./Images/cta-bg.jpg");
+    background-size: cover;
+}
+.cta h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+}
 
+.cta p {
+    color: #ffffff;
+}
 
+.cta .cta-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta .cta-btn:hover{
+    background: #009970;
+    border: 2px solid #009970;
+    text-decoration: none;
+}
 
 @media (max-width: 768px){
     .hero {
