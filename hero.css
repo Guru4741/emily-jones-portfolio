@@ -1,5 +1,4 @@
 .hero {
-    outline: 1pt solid red;
     background: url(https://bootstrapmade.com/demo/templates/Bethany/assets/img/hero-bg.jpg) center center;
     background-attachment: fixed;
     background-size: cover;
@@ -60,6 +59,18 @@
     color: #ffffff;
 }
 
+.clients {
+    background: #f6f6f7;
+    padding: 5px 0;
+}
+
+.clients img {
+    padding: 15px 0;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+    width: 40%;
+}
+
 
 .counts-one {
     display: none;
@@ -98,7 +109,6 @@
 }
 
 .about {
-    outline: 4pt solid red;
     padding: 60px 0;
 }
 
