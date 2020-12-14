@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js -e ejs,js,css,html,jpg,png,scss"
+    "start": "nodemon index.js -e ejs,js,css,html,jpg,png,scss",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,16 @@
     "express": "^4.17.1",
     "jquery": "^3.5.1",
     "livereload": "^0.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "postcss-loader": "^4.1.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
   }
 }
