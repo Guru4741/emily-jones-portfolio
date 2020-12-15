@@ -1,3 +1,5 @@
+@import '~bootstrap/scss/bootstrap';
+
 a:hover {
     text-decoration: none;
 }
@@ -8,9 +10,9 @@ a:hover {
     background-size: cover;
     height: 80vh;
     position: relative;
-}
 
-.hero::before{
+
+    &::before{
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -20,11 +22,11 @@ a:hover {
     right: 0;
 }
 
-.hero-container{
+    &-container{
     padding-top: 80px;
 }
 
-.hero h1 {
+ h1 {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
@@ -43,6 +45,7 @@ a:hover {
     position: relative;
 }
 
+}
 .btn-get-started {
     font-size: 14px;
     font-weight: 500;
@@ -148,7 +151,7 @@ a:hover {
 
 .cta {
     padding: 60px 0;
-    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("./Images/cta-bg.jpg");
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/cta-bg.jpg");
     background-size: cover;
 }
 .cta h3 {
