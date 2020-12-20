@@ -3,6 +3,10 @@
 @import './Components/header';
 @import './Components/footer';
 
+a {
+    color: #009970;
+}
+
 a:hover {
     text-decoration: none;
 }
