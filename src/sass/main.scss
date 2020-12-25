@@ -2,6 +2,7 @@
 @import './variables';
 @import './Components/header';
 @import './Components/team';
+@import './Components/contact';
 @import './Components/footer';
 
 a {
@@ -13,7 +14,7 @@ a:hover {
 }
 
 .hero {
-    background: url(https://bootstrapmade.com/demo/templates/Bethany/assets/img/hero-bg.jpg) center center;
+    background: url(../../images/monica-bg.jpg) center center;
     background-attachment: fixed;
     background-size: cover;
     height: 80vh;

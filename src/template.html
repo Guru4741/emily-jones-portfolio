@@ -374,6 +374,79 @@
         </div>
     </section>
 
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact__title">
+                        <h2>Contact</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgeJXTN9KbDkRCS7yDDrG4Qw&key=AIzaSyBJJmZb2rlFiBW3iEF8q_HKf5_71Qd3Zo4" allowfullscreen>
+                    </iframe>
+
+                    <div class="info mt-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location : </h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 mt-4">
+                            <div class="info">
+                                <i class="fas fa-phone-square-alt"></i>
+                                <h4>Call : </h4>
+                                <p>+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4">
+                            <div class="info">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email : </h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="#" class="email-form mt-4" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" minlength="4" required>
+                                <div class="invalid-feedback">
+                                    Please enter at least 4 chars
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" minlength="4" required> 
+                                <div class="invalid-feedback">
+                                    Please enter at least 4 chars
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject" minlength="8" required>
+                            <div class="invalid-feedback">
+                                Please enter at least 8 chars
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+                            <div class="invalid-feedback">
+                                Please write something for us
+                            </div>                              
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="footer">
         <div class="footer-top">
             <div class="container">
@@ -492,4 +565,26 @@ console.log('%c Monica Bellucci', 'background: #477671; color: #fdfdfd; font-siz
 // console.image("https://iv1.lisimg.com/image/7715437/610full-monica-bellucci.jpg");
 </script>
 <script src="dist/bundle.js"></script>
-    </html>
+<!-- <script src="./js/main.js"></script> -->
+<script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('email-form');
+          console.log(forms)
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {              
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+</script>
+</html>
