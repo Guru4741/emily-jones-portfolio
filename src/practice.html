@@ -29,6 +29,23 @@
             width: 300px;
         }
 
+        .parent-container {
+            outline: 3pt dotted red;
+        }
+
+        .float {
+            outline: 3pt solid green;
+            float: left;
+            display: block;
+        }
+
+        .block {
+            outline: 4pt solid blue;
+            display: inline;
+            margin-left: 20px;
+            /* width: 100px; */
+        }
+
     </style>
 </head>
 <body>
@@ -76,6 +93,15 @@
         </div>    
     </div>
 </form>
+
+<div class="parent-container">
+    <div class="float">
+        Monica
+    </div>
+    <div class="block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nostrum nesciunt voluptatibus libero laudantium tempora. Obcaecati, illo optio? Ea similique atque ipsa odio non consequuntur officia exercitationem ut deserunt tenetur!
+    </div>
+</div>
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
