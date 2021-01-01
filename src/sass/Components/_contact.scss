@@ -1,0 +1,24 @@
+.contact {
+    background: #f7f7f7;
+    padding: 80px 0;
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 65px;
+        color: #199EBB;        
+    }
+
+    .info {
+        i {
+            font-size: 32px;
+            color: #199EBB;
+            float: left;
+        }
+
+        p {
+            padding: 0 0 10px 50px;
+            line-height: 24px;
+        }
+    }
+
+}

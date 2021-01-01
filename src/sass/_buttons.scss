@@ -23,3 +23,16 @@
 
 }
 
+button[type="submit"] {
+    background: #199EBB;
+    color: #ffffff;
+    transition: 0.4s;
+    border: 0;
+    padding: 10px 24px;
+
+    &:hover {
+        background: #23c2e1;
+    }
+
+}
+
