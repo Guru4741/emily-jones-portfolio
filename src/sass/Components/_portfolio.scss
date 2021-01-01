@@ -1,0 +1,71 @@
+.portfolio {
+    background-color: #edf6ff;
+    padding-bottom: 0;
+    padding-top: 85px;
+
+    h2 {
+        color: #199EBB;
+        margin-bottom: 25px;
+    }
+
+    &__grid {
+        margin-top: 65px;
+
+        .row > div {
+            padding: 0;
+
+            .card:hover .portfolio-over {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+
+    }
+
+    .card-block {
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &-over {
+        position: absolute;
+        transition: all 0.3s ease;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.8);
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        display: table-cell;
+        vertical-align: middle;
+
+        div {
+            transform: translateY(-50%);
+            top: 50%;
+            position: relative;
+
+            .card-title {
+                color: #ffffff;
+                font-size: 30px;
+            }
+
+            .card-text {
+                color: #ffffff;
+                opacity: .75;
+                padding: 0 45px;
+            }
+
+        }
+
+    }
+
+}
