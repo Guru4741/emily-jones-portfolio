@@ -1,0 +1,119 @@
+body::before {
+    content: "";
+    background: #040404 url(../../images/bg.jpg) top right no-repeat;    
+    position: fixed;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+header {
+
+    * {
+        transition: ease-in-out 0.3s;
+    }
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 997;
+    overflow-y: auto;
+    transition: ease-in-out 0.3s;
+
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        font-family: "Poppins", serif;
+
+        a,
+        a:hover {
+            color: #ffffff;
+            line-height: 1;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+
+        span {
+            color: #ffffff;
+            border-bottom: 2px solid #18d26e;
+            padding-bottom: 6px;
+        }
+
+    }
+
+    .nav-menu {
+        margin-top: 35px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li + li {
+                margin-left: 30px;
+            }
+
+            a {
+                position: relative;
+                font-style: 16px;
+                font-family: "Poppins",serif;
+                font-weight: 400;
+                display: block;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    bottom: -4px;
+                    left: 0;
+                    background-color: #18d26e;
+                    visibility: hidden;
+                    transition: all 0.3s ease-in-out;
+                }
+                
+            }
+
+        }
+
+    }
+
+    .social-links {
+        display: flex;
+        margin-top: 40px;
+
+        a {            
+            font-size: 16px;
+            color: #ffffff;
+            height: 40px;
+            width: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 8px;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: #18d26e;
+            }
+
+        }
+
+    }
+}
