@@ -142,4 +142,59 @@
 
     }
 
+/* INTERESTS CSS */    
+
+    .interests {
+
+        &__title {
+
+            h2 {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0;
+                line-height: 1;
+                margin: 0 0 20px 0;
+                text-transform: uppercase;
+                color: #aaaaaa;
+                font-family: "Poppins", serif;
+
+                &::after {
+                    content: "";
+                    width: 120px;
+                    height: 1px;
+                    display: inline-block;
+                    background: #4ceb95;
+                    margin: 4px 10px;
+                }
+
+            }
+
+        }
+
+        .icon-box {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: rgba($color: #ffffff, $alpha: 0.08);
+            transition: ease-in-out 0.3s;
+
+            i {
+                font-size: 32px;
+                padding: 10px;
+                line-height: 1;
+            }
+
+            h3 {
+                font-weight: 700;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                font-size: 16px;
+                color: #ffffff;
+            }
+
+        }
+
+    }
+
 }
