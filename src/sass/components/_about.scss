@@ -1,0 +1,145 @@
+.about {
+    &__title {
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0;
+            line-height: 1;
+            margin: 0 0 20px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            font-family: "Poppins", serif;
+
+            &::after {
+                content: "";
+                width: 120px;
+                height: 1px;
+                display: inline-block;
+                background: #4ceb95;
+                margin: 4px 10px;
+            }
+
+        }
+
+        p {
+            margin: -15px 0 15px 0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Poppins", serif;
+            color: #ffffff;
+        }
+
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 26px;
+        color: #4ceb95;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding-bottom: 10px;
+        }
+
+        i {
+            font-size: 20px;            
+            padding-right: 10px;
+            color: #4ceb95;
+        }
+
+    }
+
+/* COUNTS CSS */    
+
+    .counts {
+        & .count-box {
+            padding: 30px 30px 25px 30px;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            background: rgba($color: #ffffff, $alpha: 0.08);
+
+            i {
+                position: absolute;
+                top: -25px;
+                left: 50%;
+                transform: translate(-50%);
+                font-size: 24px;
+                background: rgba($color: #ffffff, $alpha: 0.1);
+                padding: 12px;
+                color: #4ceb95;
+                border-radius: 50%;
+            }
+
+        }
+    }
+
+/* SKILSS CSS */    
+
+    .skills {
+        &__title {
+            h2 {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 0;
+                line-height: 1;
+                margin: 0 0 20px 0;
+                text-transform: uppercase;
+                color: #aaaaaa;
+                font-family: "Poppins", serif;
+
+                &::after {
+                    content: "";
+                    width: 120px;
+                    height: 1px;
+                    display: inline-block;
+                    background: #4ceb95;
+                    margin: 4px 10px;
+                }
+
+            }
+        }
+
+        .progress {
+            background: none;
+            display: block;
+            height: 50px;
+
+            .skill {
+                display: block;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-family: "Poppins", serif;
+                font-weight: 600;
+                padding: 10px 0;
+                margin: 0 0 6px 0;
+
+                .val {
+                    float: right;
+                    font-style: normal;
+                }
+
+            }
+
+            .progress-bar-wrap {
+                background: rgba($color: #ffffff, $alpha: 0.15);
+
+                .progress-bar {
+                    height: 10px;
+                    transition: .9s;
+                    background-color: #18d26e;
+                }
+
+            }
+
+        }
+
+    }
+
+}
