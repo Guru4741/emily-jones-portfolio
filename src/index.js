@@ -1,5 +1,8 @@
 import "bootstrap";
-import "jquery";
+import "jquery/src/jquery";
+// import "owl.carousel/dist/assets/owl.carousel.min.css";
+// import "owl.carousel/dist/owl.carousel";
+// import { tns } from "tiny-slider/src/tiny-slider";
 import 'waypoints/lib/noframework.waypoints';
 import counterUp from 'counterup2';
 
@@ -27,6 +30,21 @@ el.forEach(e => {
     } )
     
 })
+
+const mySlider = document.querySelector('.my-slider');
+
+// console.log({tns})
+
+// var slider = tns({
+//     container: mySlider,
+//     items: 3,
+//     slideBy: 'page',
+//     autoplay: true,
+//     gutter: 10,
+//     mouseDrag: true,
+//     swipeAngle: false,
+//     speed: 400
+//   });
 
 
 // Skills Section
